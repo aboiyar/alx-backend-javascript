@@ -17,7 +17,7 @@ export class StudentALX {
   constructor(firstName, lastName, ALXClass) {
     this._firstName = firstName;
     this._lastName = lastName;
-    this._ALXClass = ALXClass;
+    this._alxClass = ALXClass;
   }
 
   get fullName() {
@@ -25,12 +25,12 @@ export class StudentALX {
   }
 
   get ALXClass() {
-    return this._ALXClass;
+    return this._alxClass;
   }
 
   get fullStudentDescription() {
     return `${this._firstName} ${this._lastName} - \
-${this._ALXClass.year} - ${this._ALXClass.location}`;
+${this._alxClass.year} - ${this._alxClass.location}`;
   }
 }
 
