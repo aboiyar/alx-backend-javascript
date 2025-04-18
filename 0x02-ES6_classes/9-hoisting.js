@@ -14,17 +14,17 @@ export class ALXClass {
 }
 
 export class StudentALX {
-  constructor(firstName, lastName, ALXClass) {
+  constructor(firstName, lastName, alxClass) {
     this._firstName = firstName;
     this._lastName = lastName;
-    this._alxClass = ALXClass;
+    this._alxClass = alxClass;
   }
 
   get fullName() {
     return `${this._firstName} ${this._lastName}`;
   }
 
-  get ALXClass() {
+  get alxClass() {
     return this._alxClass;
   }
 
@@ -46,3 +46,4 @@ const student5 = new StudentALX('Jason', 'Sandler', class2019);
 const listOfStudents = [student1, student2, student3, student4, student5];
 
 export default listOfStudents;
+
